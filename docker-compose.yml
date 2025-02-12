@@ -1,0 +1,13 @@
+services:
+  ct-apache2:
+    image: ubuntu/apache2
+    ports:
+      - "7071:80"
+  ct-nginx:
+    image: nginx
+    ports:
+      - "7072:80"
+  ct-httpd:
+    image: httpd
+    ports:
+      - "7073:80"
